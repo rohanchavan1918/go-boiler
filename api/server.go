@@ -1,6 +1,9 @@
 package api
 
 import (
+	"fmt"
+	"strconv"
+
 	"github.com/gin-gonic/gin"
 	"github.com/rohanchavan1918/go-boiler/conf"
 	"github.com/rohanchavan1918/go-boiler/utils"
@@ -14,5 +17,6 @@ func RunServer(config *conf.Config) {
 	if err != nil {
 		utils.AlertAndPanic(err)
 	}
-	r.Run(":8000")
+	port := fmt.Sprintf(":%s", strconv.Itoa(int(conf.AppConfig.Port)))
+	r.Run(port)
 }
