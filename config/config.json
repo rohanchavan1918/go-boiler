@@ -1,5 +1,5 @@
 {
-    "port": 8000,
+    "port": 8080,
     "service_name": "go-boiler",
     "db": {
         "db_host":"172.17.0.1",
