@@ -72,6 +72,19 @@ go build -o myapp
 ./myapp
 ```
 
+### Run using docker-compose
+
+```sh
+docker-compose up
+```
+
+### Run using docker
+
+```sh
+docker build -t go-boiler .
+docker run -v ./config/:/config -p 8080:8080 go-boiler
+```
+
 Access your application at http://localhost:8080.
 
 ### Configuration
