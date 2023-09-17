@@ -2,6 +2,20 @@
 
 go-boiler is a boilerplate project for kickstarting your Golang applications. It provides a basic project structure with essential components and configurations to help you get started quickly.
 
+## Features
+
+- ✅ Mysql / Postgres setup
+- ✅ Gin setup
+- ✅ Healthcheck endpoint.
+- ✅ Docker Support
+- ✅ Configurable log rotation
+- ✅ Logging to log file and Fluentd Support
+- ✅ Slack Alerts
+- ✅ Config support in json,yaml.
+- ✅ Custom Flags support using cobra.
+- 🔄 Docker based hot reload for development (Coming soon)
+- 🔄 k8s support
+  
 ## Project Structure
 
 ```sh
